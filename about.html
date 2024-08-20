@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art Gallery - About</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Kalam:wght@300;400;700&family=Tangerine:wght@400;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <section>
+        <nav class="navbar">
+            <div class="navbar-center">
+                <div class="hotel-name">Art Gallery</div>
+            </div>
+            <ul class="navbar-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#Tickets">Tickets</a></li>
+            </ul>
+            <button class="ham-icon">
+                <label for="ham-label">
+                    <i class="fa-solid fa-bars"></i>
+                    <i class="fa-solid fa-x"></i>
+                </label>
+                <input type="checkbox" id="ham-label" />
+            </button>
+        </nav>
+    </section>
+    <main>
+        <section class="about">
+            <h2>About Us</h2>
+            <div class="boxes">
+
+                <div class="aboutus">
+                    <p>Welcome to the Art Gallery, where we celebrate artistic expression through diverse
+                        collections. Our gallery showcases a wide range of artworks from various genres and periods.
+                    </p>
+                    <p>Founded in 2024, our mission is to provide a platform for artists and art enthusiasts to
+                        connect and explore the beauty of art. Whether you're a seasoned art lover or a curious
+                        newcomer, we invite you to immerse yourself in our exhibits.</p>
+                </div>
+                <div class="aboutimg">
+                    <img src="images/artist5.jpg" alt="">
+                </div>
+
+            </div>
+        </section>
+
+        <section class="team">
+            <h2>Meet Our Team</h2>
+            <div class="team-content">
+                <div class="team-member">
+                    <div class="teams">
+                        <img src="images/team1.jpg" alt="Team Member 1">
+                    </div>
+                    <h3>Jin-Ho-Kim</h3>
+                    <p>Many of experiences I have encountered, that made me strong and moments of my life has translated
+                        into my art. His passion for contemporary Korean art and dedication to promoting local artists
+                        have made the gallery a prominent cultural hub.</p>
+                </div>
+                <div class="team-member">
+                    <div class="teams">
+                        <img src="images/team2.jpg" alt="Team Member 2">
+                    </div>
+                    <h3>Dong-Wook Choi</h3>
+                    <p>Dong-Wook Choi, with a degree in Design from Yonsei University, brings a unique blend of
+                        creativity and technical skill to the gallery. Dong-Wook's meticulous attention to detail and
+                        innovative design concepts have made him an invaluable asset to the gallery team.</p>
+                </div>
+                <div class="team-member">
+                    <div class="teams">
+                        <img src="images/team3.jpg" alt="Team Member 3">
+                    </div>
+                    <h3>Min-Jae Lee</h3>
+                    <p>Min-Jae Lee holds a degree in Communications and Media from Korea University. With a background
+                        in public relations and marketing, Min-Jae excels at promoting the gallery's exhibitions and
+                        events.Min-Jae is passionate about making art accessible to a broader audience and cultural
+                        community.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact" id="Tickets">
+            <div class="con">
+                <h2>Contact Us</h2>
+                <form>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+            <div class="map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621"
+                    frameborder="0" style="border:0; width: 100%; height: 100%;" allowfullscreen>
+                </iframe>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Art Gallery</p>
+    </footer>
+</body>
+
+</html>

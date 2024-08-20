@@ -1,0 +1,493 @@
+@import url( "https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Kalam:wght@300;400;700&family=Tangerine:wght@400;700&display=swap");
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    font-family: "Tangerine", cursive;
+    font-weight: 400;
+     font-size: 40px;
+    font-style: normal;
+}
+p{
+    font-family: "Poppins", sans-serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+    
+.navbar {
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    padding: 10px 0;
+    display: flex;
+    background-color: lavender;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar-center {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.ham-icon {
+    display: none;
+    border: none;
+    background-color: transparent;
+}
+
+.ham-icon input[type="checkbox"] {
+    appearance: none;
+}
+
+.hotel-name {
+    font-size: 34px;
+    color: black;
+    letter-spacing: 8px;
+}
+
+.navbar-links {
+    list-style: none;
+    padding: 10px;
+    display: flex;
+    gap: 40px;
+    font-size: 35px;
+}
+
+.navbar-links li {
+    display: inline;
+}
+
+.navbar-links a {
+    color: black;
+}
+
+.navbar-links a {
+    color: black;
+    text-decoration: none;
+    padding: 0px 2px;
+}
+
+.navbar-links a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 1px;
+    background: black;
+    transition: width .3s;
+}
+
+.navbar-links a:hover::after {
+    width: 100%;
+    transition: width .3s;
+}
+
+.hero {
+    background: url('images/hero-1.jpg') no-repeat center center/cover;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: lavender;
+    text-align: center;
+}
+
+.info, .upcoming, .news, .gallery, .featured, .about, .team, .contact {
+    padding: 20px;
+    text-align: center;
+}
+.upcoming img{
+    display: flex;
+    margin: auto;
+    height: 300px;
+    width: 80%;
+}
+
+.upcoming-content{
+    display: flex;
+    text-align: center;
+} 
+
+.upcoming-item{
+    flex: 1;
+    margin: 0.2em;
+    background-color: lavender;
+    border: 1px solid #ddd;
+    padding: 0.6em;
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.upcoming-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+ .news-content{  
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 1em;
+}
+.news-item{
+    flex: 1;
+    max-width: calc(33% - 2em);
+}
+
+.flip-card img{
+    width: 100%;
+    height: 100%;
+}
+.flip-card {
+    background-color: transparent;
+    width: 250px;
+    height: 200px;
+    perspective: 500px; 
+    margin: 1em 0; 
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    box-sizing: border-box;
+}
+
+.flip-card-front {
+    border: 2px solid #ddd;
+}
+
+.flip-card-back {
+    background-color: lavender;
+    color: black;
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.imgbox{
+    width: 350px;
+}
+.info-content, .gallery-grid, .featured-grid, .team-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.info-item, .gallery-item, .featured-item, .team-member {
+    flex: 1;
+    margin: 0.2em;
+    background-color: lavender;
+    border: 1px solid #ddd;
+    padding: 0.6em;
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info-item:hover{
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-item:hover{
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.info-item img, .gallery-item img, .featured-item img, .team-member img {
+    width: 100%;
+    height: auto;
+}
+.parentitem{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.about{
+    justify-content: center;
+}
+.boxes{
+    display: flex;
+}
+.aboutus{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    width: 50%;
+}
+
+.aboutimg{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.teams {
+height: 300px;
+}
+.teams img{
+    height: 100%;
+}
+.contact{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+.contact form {
+    display: flex;
+    flex-direction: column;
+}
+.con{
+    width: 45%;
+}
+.map{
+    width: 50%;
+}
+.contact form label {
+    margin-top: 1em;
+    text-align: left;
+}
+
+.contact form input, .contact form textarea, .contact form button {
+    padding: 0.5em;
+    margin-top: 0.5em;
+}
+
+footer {
+    background: lavender;
+    color: black;
+    text-align: center;
+    padding: 1em;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+} 
+@media (min-width: 300px) and (max-width: 576px) {
+    .navbar {
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 20px 0 10px 10px;
+        justify-content: space-between;
+    }
+    
+    .navbar-center {
+        order: 1;
+    }
+    
+    .navbar-links {
+        order: 3;
+        width: 100%;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
+        gap: 0.1rem;
+        height: 0;
+        overflow: hidden;
+        padding: 0;
+    }
+    
+    .ham-icon {
+        display: block;
+        order: 2;
+    }
+    i.fa-solid.fa-x {
+        display: none;
+    }
+    
+    .fa-x,
+    .fa-bars {
+        color: black;
+        font-size: 1.7rem;
+    }
+    .navbar:has(input[type="checkbox"]:checked) .navbar-links {
+        margin-top: 1rem;
+        height: 270px;
+    }
+    
+    .navbar:has(input[type="checkbox"]:checked) .fa-bars {
+        display: none;
+    }
+    
+    .navbar:has(input[type="checkbox"]:checked) .fa-x {
+        display: inline-block;
+    }
+    .team-content, .info-content, .upcoming-content, .gallery-grid, .featured-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .team-member, .info-item, .upcoming-item, .gallery-item, .featured-item {
+        max-width: 100%;
+    }
+
+    .imgbox{
+        width: 100%;
+    }
+    .artimg{
+        width: 100%;
+    }
+    
+    .contact {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .con, .map {
+        width: 90%;
+    }
+    
+    .news{
+        display: none;
+    }
+    body {
+        font-size: 16px;
+    }
+
+    p {
+        font-size: 10px;
+    }
+    
+    .aboutimg, .aboutus {
+        width: 400px;
+        height: fit-content;
+    }
+    .about{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .teams {
+        height: auto;
+    }
+    .boxes{
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 578px) and (max-width: 765px) {
+    .team-content, .info-content, .upcoming-content, .gallery-grid, .featured-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .team-member, .info-item, .upcoming-item, .gallery-item, .featured-item {
+        max-width: 100%;
+    }
+
+    .contact {
+        flex-direction: column;
+        align-items: center;
+    }
+    .imgbox{
+        width: 100%;
+    }
+    .artimg{
+        width: 100%;
+    }
+    .con, .map {
+        width: 90%;
+    }
+    .aboutimg, .aboutus{
+        width: 400px;
+        height: fit-content;
+    }
+    .about{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .boxes{
+       flex-direction: column;
+    }
+    body {
+        font-size: 30px;
+    }
+  
+    p {
+        font-size: 20px;
+    }
+
+    .teams {
+        height: auto;
+    }
+}
+
+@media (max-width: 768px) and (max-width: 1200px) {
+    .team-content, .info-content, .upcoming-content, .gallery-grid, .featured-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .team-member, .info-item, .upcoming-item,.gallery-item, .featured-item {
+        max-width: 100%;
+    }
+
+    .contact {
+        text-align: left;
+        align-items: center;
+    }
+    .imgbox{
+        width: 100%;
+    }
+    .artimg{
+        width: 100%;
+    }
+    .con, .map {
+        width: 90%;
+    }
+    .aboutimg, .aboutus{
+        width: 90%;
+    }
+    .about{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .boxes{
+       display: contents;
+    }
+    body {
+        font-size: 40px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    .teams {
+        height: auto;
+    }
+}
