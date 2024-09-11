@@ -22,6 +22,14 @@ p{
     font-size: 18px;
     letter-spacing: 1px;
 }
+nav ul li a:active {
+    color: red;
+    font-weight: bolds;
+}
+
+nav ul a.active {
+    border-bottom: 2px solid rgb(0, 0, 0);
+}
 h3{
     margin-top: 10px;
 }
@@ -60,7 +68,8 @@ h3{
     appearance: none;
 }
 
-.hotel-name {
+.hotel-name 
+{
     font-size: 34px;
     color: black;
     letter-spacing: 8px;
@@ -80,6 +89,7 @@ h3{
 
 .navbar-links a {
     color: black;
+    position: relative;
 }
 
 .navbar-links a {
@@ -224,8 +234,6 @@ footer {
     display: grid;
     justify-items: center;
     grid-template-columns: repeat(3, 1fr);
-    /* gap: 10px;
-    padding-left: 4rem; */
 }
 
 .card {
@@ -687,6 +695,9 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    width: 80%;
+    margin: 0 auto;
+    padding: 34px;
 }
 .cards img{
     height: 400px;
@@ -761,12 +772,12 @@ footer {
   transition: all 0.35s ease;
 }
 .box{
-    /* width: 1200px; */
+    width: 80%;
     display: grid;
     grid-template-columns:repeat(3, 1fr);
     grid-gap: 15px;
     margin: 0 auto;
-    padding-top: 20px;
+    padding-top: 34px;
   }
   .cardss{
     position: relative;
